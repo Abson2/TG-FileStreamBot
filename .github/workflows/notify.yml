@@ -4,6 +4,7 @@ on:
   fork:
   push:
   release:
+    types: published
   issue_comment:
     types: created
   watch:
@@ -24,3 +25,4 @@ jobs:
         with:
           bot_token: '${{ secrets.BOT_TOKEN }}'
           chat_id: '${{ secrets.CHAT_ID }}'
+          topic_id: '${{ secrets.TOPIC_ID }}'
